@@ -1,0 +1,354 @@
+ body {
+     font-family: 'Inter', sans-serif;
+     scroll-behavior: smooth;
+     overflow-x: hidden;
+ }
+
+ .glass-nav {
+     background: rgba(255, 255, 255, 0.8);
+     backdrop-filter: blur(12px);
+     border-bottom: 1px solid rgba(229, 231, 235, 0.5);
+ }
+
+ .hero-gradient {
+     background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+ }
+
+ .text-gradient {
+     background: linear-gradient(to right, #38bdf8, #818cf8);
+     -webkit-background-clip: text;
+     background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
+
+ .card-hover {
+     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .card-hover:hover {
+     transform: translateY(-8px);
+     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+ }
+
+ #home {
+     margin-top: 70px;
+ }
+
+ .blob {
+     position: absolute;
+     width: 500px;
+     height: 500px;
+     background: rgba(56, 189, 248, 0.1);
+     filter: blur(80px);
+     border-radius: 50%;
+     z-index: -1;
+ }
+
+ @keyframes float {
+     0% {
+         transform: translateY(0px);
+     }
+
+     50% {
+         transform: translateY(-20px);
+     }
+
+     100% {
+         transform: translateY(0px);
+     }
+ }
+
+ .animate-float {
+     animation: float 6s ease-in-out infinite;
+ }
+
+ .logo {
+     display: flex;
+     align-items: center;
+ }
+
+ .logo2 {
+     width: 200px;
+     height: auto;
+ }
+
+ .logo img {
+     width: 220px;
+     height: auto;
+ }
+
+/* ============================================
+   COMPREHENSIVE MOBILE RESPONSIVE STYLES
+   ============================================ */
+
+/* Small Phones (320px - 479px) */
+@media (max-width: 479px) {
+    body {
+        font-size: 14px;
+    }
+
+    .logo img {
+        width: 140px;
+    }
+
+    .logo2 {
+        width: 140px;
+    }
+
+    #home {
+        margin-top: 60px;
+        padding-top: 10px;
+    }
+
+    /* Hero Section */
+    h1 {
+        font-size: 2rem !important;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 1.75rem !important;
+    }
+
+    h3 {
+        font-size: 1.25rem !important;
+    }
+
+    /* Reduce padding on sections */
+    section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+    /* Card adjustments */
+    .card-hover {
+        padding: 1rem !important;
+    }
+
+    /* Stats cards - make them smaller */
+    .stats-card {
+        padding: 1rem !important;
+    }
+
+    /* Button text size */
+    button {
+        font-size: 0.875rem;
+    }
+
+    /* Footer adjustments */
+    footer {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    /* Reduce blob size */
+    .blob {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* Phones (480px - 767px) */
+@media (min-width: 480px) and (max-width: 767px) {
+    .logo img {
+        width: 160px;
+    }
+
+    .logo2 {
+        width: 160px;
+    }
+
+    #home {
+        margin-top: 60px;
+    }
+
+    h1 {
+        font-size: 2.5rem !important;
+    }
+
+    h2 {
+        font-size: 2rem !important;
+    }
+
+    section {
+        padding-top: 4rem !important;
+        padding-bottom: 4rem !important;
+    }
+}
+
+/* Tablets (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .logo img {
+        width: 180px;
+    }
+
+    .logo2 {
+        width: 180px;
+    }
+
+    #home {
+        margin-top: 70px;
+    }
+
+    /* Adjust grid gaps */
+    .grid {
+        gap: 1.5rem;
+    }
+}
+
+/* General Mobile Optimizations (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Navigation */
+    nav {
+        padding: 0.5rem 1rem;
+    }
+
+    .glass-nav {
+        backdrop-filter: blur(8px);
+    }
+
+    /* Mobile menu improvements */
+    #mobile-dropdown {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #mobile-dropdown a {
+        padding: 0.75rem 0;
+        font-size: 1rem;
+    }
+
+    /* Hero section mobile optimization */
+    .hero-gradient {
+        min-height: auto;
+    }
+
+    /* Text adjustments */
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    /* Image optimization */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Card hover effects - reduce on mobile */
+    .card-hover:hover {
+        transform: translateY(-4px);
+    }
+
+    /* Footer grid - stack on mobile */
+    footer .grid {
+        gap: 2rem;
+    }
+
+    /* Spacing adjustments */
+    .space-x-8 {
+        gap: 1rem;
+    }
+
+    /* Price comparison card on mobile */
+    .rounded-\[2\.5rem\] {
+        border-radius: 1.5rem;
+        padding: 1rem;
+    }
+
+    /* Opening cards */
+    .opening-card {
+        padding: 1.25rem;
+    }
+
+    /* Reduce animation intensity on mobile */
+    .animate-float {
+        animation: float 8s ease-in-out infinite;
+    }
+
+    /* Touch-friendly buttons */
+    button, a {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    /* Form inputs - make them touch-friendly */
+    input, textarea, select {
+        font-size: 16px !important; /* Prevents zoom on iOS */
+        padding: 0.75rem;
+    }
+
+    /* Better spacing for mobile */
+    .max-w-7xl {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* Landscape phones */
+@media (max-width: 896px) and (orientation: landscape) {
+    #home {
+        min-height: auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    section {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+}
+
+/* High DPI displays (Retina) */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    img {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
+
+/* Accessibility - Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .animate-float {
+        animation: none;
+    }
+}
+
+ .opening-card {
+     background: linear-gradient(135deg, #0ea5e9 0%, #38bdf8 100%);
+     padding: 25px;
+     border-radius: 15px;
+     transition: 0.3s;
+     border: 1px solid rgba(14, 165, 233, 0.3);
+     box-shadow: 0 4px 6px rgba(14, 165, 233, 0.1);
+ }
+
+ .opening-card:hover {
+     transform: translateY(-10px);
+     box-shadow: 0 12px 24px rgba(14, 165, 233, 0.2);
+ }
+
+ .opening-card h3 {
+     color: white;
+     font-weight: 600;
+ }
+
+ .opening-card a {
+     display: inline-block;
+     margin-top: 10px;
+     color: white;
+     font-weight: 500;
+     text-decoration: none;
+     padding: 8px 16px;
+     background: rgba(255, 255, 255, 0.2);
+     border-radius: 8px;
+     transition: 0.3s;
+ }
+
+ .opening-card a:hover {
+     background: rgba(255, 255, 255, 0.3);
+ }

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <!-- Mobile Optimization Meta Tags -->
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=yes">
+    <title>MediGhar | Your Health, Our Priority</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide-react/0.263.1/lucide-react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.umd.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Left Side: Logo -->
+            <div class="flex items-center space-x-3">
+                <div class="logo">
+                    <img src="logo.png" alt="MediGhar Logo">
+                </div>
+            </div>
+
+            <!-- Right Side: Links & Button -->
+            <div class="hidden md:flex items-center space-x-10">
+                <div class="flex space-x-8 text-sm font-medium">
+                    <a href="index.html" class="hover:text-sky-600 transition-colors">Home</a>
+                    <a href="Services.html" class="hover:text-sky-600 transition-colors">Services</a>
+                    <a href="Careers.html" class="hover:text-sky-600 transition-colors">Careers</a>
+                    <a href="Contact.html" class="hover:text-sky-600 transition-colors">Contact</a>
+                    <a href="About.html" class="hover:text-sky-600 transition-colors">About Us</a>
+                </div>
+
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-slate-600" onclick="toggleMobileMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown -->
+        <div id="mobile-dropdown" class="hidden md:hidden bg-white border-t border-slate-100 p-6 space-y-4">
+            <a href="index.html" class="block font-medium hover:text-sky-600 transition-colors">Home</a>
+            <a href="Services.html" class="block font-medium hover:text-sky-600 transition-colors">Services</a>
+            <a href="Careers.html" class="block font-medium hover:text-sky-600 transition-colors">Careers</a>
+            <a href="Contact.html" class="block font-medium hover:text-sky-600 transition-colors">Contact</a>
+            <a href="About.html" class="block font-medium hover:text-sky-600 transition-colors">About Us</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- Careers Section -->
+        <section id="careers" class="py-24 bg-slate-900 text-white overflow-hidden relative">
+            <div class="absolute bottom-0 right-0 opacity-10 pointer-events-none">
+                <svg width="600" height="600" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+            </div>
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="flex flex-col lg:flex-row items-center gap-16">
+                    <div class="lg:w-1/2">
+                        <span class="text-sky-400 font-bold tracking-widest uppercase text-sm mb-4 block">Work With
+                            Us</span>
+                        <h2 class="text-4xl md:text-5xl font-bold mb-8">Explore Internship Opportunities</h2>
+                        <p class="text-slate-400 text-lg leading-relaxed mb-8">
+                            We are always looking for passionate medical professionals, engineers, and creative thinkers
+                            who want to make a real impact on people's lives. Join a team where your work translates
+                            into health and happiness.
+                        </p>
+                        <ul class="space-y-4 mb-10">
+                            <li class="flex items-center space-x-3">
+                                <span class="bg-sky-500/20 text-sky-400 p-1 rounded-full"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg></span>
+                                <span>👥 Collaborative Environmen</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="bg-sky-500/20 text-sky-400 p-1 rounded-full"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg></span>
+                                <span>❤️ Healthcare Impact</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="bg-sky-500/20 text-sky-400 p-1 rounded-full"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg></span>
+                                <span>📈 Professional Growth</span>
+                            </li>
+                        </ul>
+                        <button
+                            class="bg-sky-500 hover:bg-sky-600 text-white px-10 py-4 rounded-2xl font-bold transition-all transform hover:scale-105">
+                            <a href="https://forms.gle/Rc6ooVeCXD5gQym28" class="btn-primary">Apply Now</a>
+                        </button>
+                    </div>
+                    <div class="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="opening-card">
+                            <h3>Full Stack Internship</h3>
+
+                            <a href="https://forms.gle/Rc6ooVeCXD5gQym28">Apply Now</a>
+                        </div>
+
+                        <div class="opening-card">
+                            <h3>UI/UX Design Intern</h3>
+
+                            <a href="https://forms.gle/Rc6ooVeCXD5gQym28">Apply Now</a>
+                        </div>
+                        <div class="opening-card">
+                            <h3>React Native Internship</h3>
+
+                            <a href="https://forms.gle/Rc6ooVeCXD5gQym28">Apply Now</a>
+                        </div>
+
+                        <div class="opening-card">
+                            <h3>Data Analysis Intern</h3>
+
+                            <a href="https://forms.gle/Rc6ooVeCXD5gQym28">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-10 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 items-start">
+            <!-- Footer Branding & About -->
+            <div class="col-span-1 md:col-span-2">
+                <div class="mb-4">
+                    <img class="logo2" src="logo.png" alt="MediGhar Logo"
+                        onerror="this.src='https://via.placeholder.com/40x40?text=M'">
+                </div>
+                <p class="max-w-sm mb-6 leading-relaxed text-slate-400">
+                    Revolutionizing home healthcare with technology and compassion. Bringing professional medical
+                    support right to your doorstep for a healthier tomorrow.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="https://www.instagram.com/medighar_?igsh=ODN3Z2IzeXJkY2Uz" target="_blank"
+                        class="p-2.5 bg-slate-800 rounded-xl hover:bg-sky-600 hover:text-white transition-all transform hover:-translate-y-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/medighar/"
+                        class="p-2.5 bg-slate-800 rounded-xl hover:bg-sky-600 hover:text-white transition-all transform hover:-translate-y-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect width="4" height="12" x="2" y="9" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-span-1">
+                <h4 class="text-white font-bold mb-6 tracking-wide">Quick Links</h4>
+                <ul class="space-y-4">
+                    <li><a href="index.html" class="hover:text-sky-400 transition-colors">Home</a></li>
+                    <li><a href="Services.html" class="hover:text-sky-400 transition-colors">Services</a></li>
+                    <li><a href="Careers.html" class="hover:text-sky-400 transition-colors">Careers</a></li>
+                    <li><a href="Contact.html" class="hover:text-sky-400 transition-colors">Contact</a></li>
+                    <li><a href="About.html" class="hover:text-sky-400 transition-colors">About Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal Links -->
+            <div class="col-span-1">
+                <h4 class="text-white font-bold mb-6 tracking-wide">Legal</h4>
+                <ul class="space-y-4">
+                    <li><a href="#" class="hover:text-sky-400 transition-colors">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-sky-400 transition-colors">Terms of Service</a></li>
+                    <li><a href="#" class="hover:text-sky-400 transition-colors">Cookie Policy</a></li>
+                    <li><a href="#" class="hover:text-sky-400 transition-colors">Refund Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright -->
+        <div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-slate-800 text-center text-sm">
+            <p>© 2024 MediGhar Healthcare Services. All rights reserved. Designed with care for your health.</p>
+        </div>
+    </footer>
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-dropdown');
+            menu.classList.toggle('hidden');
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    e.preventDefault();
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for active navigation links
+        const observerOptions = {
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const id = entry.target.getAttribute('id');
+                const navLink = document.querySelector(`nav a[href="#${id}"]`);
+                if (entry.isIntersecting) {
+                    document.querySelectorAll('nav a').forEach(l => l.classList.remove('active-link'));
+                    if (navLink) navLink.classList.add('active-link');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+
+</html>
